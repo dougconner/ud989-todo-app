@@ -247,7 +247,7 @@ label[for='toggle-all'] {
 }
 
 #todo-list li .priority-btn:after {
-	content: '!';
+	/*content: '!';*/
 }
 
 #todo-list li .toggle:after {
@@ -282,7 +282,17 @@ label[for='toggle-all'] {
 	text-decoration: line-through;
 }
 
-#todo-list li.priority:not(.completed) label {
+/*experimental priority*/
+#todo-list li.priority-0:not(.completed) label {
+	color: inherit;
+}
+
+#todo-list li.priority-1:not(.completed) label {
+	font-weight: bold;
+}
+
+#todo-list li.priority-2:not(.completed) label {
+	font-weight: bold;
 	color: #d66;
 }
 
